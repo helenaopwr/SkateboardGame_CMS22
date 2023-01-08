@@ -437,7 +437,9 @@ MonoBehaviour:
   frontLeftTransform: {fileID: 411270194}
   backRightTransform: {fileID: 1924576536}
   backLeftTransform: {fileID: 1063991687}
-  accelaration: 20
+  oscPortNumber: 10000
+  oscDeviceUUID: unity
+  accelaration: 2
   breakingForce: 10
   maxTurnAngle: 15
 --- !u!1 &319039689
