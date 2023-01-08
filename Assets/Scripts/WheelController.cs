@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using extOSC;
 
 public class WheelController : MonoBehaviour
 {
@@ -15,13 +16,17 @@ public class WheelController : MonoBehaviour
     [SerializeField] Transform backRightTransform;
     [SerializeField] Transform backLeftTransform;
 
-    private Rigidbody rb;
-
-    private float movementX;
+    public int oscPortNumber = 10000;
+    public string oscDeviceUUID;
+    
     public float accelaration = 20f;
     public float breakingForce = 10f;
     public float maxTurnAngle = 15f;
-
+    
+    private Rigidbody rb;
+    
+    private float movementX;
+    
     private float currentAcceleration = 0f;
     private float currentBreakForce = 0f;
     private float currentTurnAngle = 0f;
@@ -31,12 +36,17 @@ public class WheelController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         //audioSource = GetComponent<AudioSource>();
 
+        // Initialize OSC
+        OSCReceiver receiver = gameObject.AddComponent<OSCReceiver>();
+        receiver.LocalPort = oscPortNumber;
+        receiver.Bind("/" + oscDeviceUUID + "/touch0", OnMoveOSC);
+
         //count = 0;
         //maxCount = GameObject.FindGameObjectsWithTag("Diamond").Length;
         //SetCountText();
     }
 
-
+    /*
     private void OnMove(InputValue movementValue)
     {
         Vector2 movementVector = movementValue.Get<Vector2>();
@@ -44,6 +54,15 @@ public class WheelController : MonoBehaviour
         // calculates the rotation for steering
         movementX = movementVector.x;
 
+    }
+    */
+
+    public void OnMoveOSC(OSCMessage message)
+    {
+        movementX = (float)message.Values[0].DoubleValue;
+
+        Debug.Log("movementX = " + movementX.ToString("F6"));
+        
     }
 
     private void FixedUpdate()
