@@ -36,17 +36,19 @@ public class WheelController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         //audioSource = GetComponent<AudioSource>();
 
+        /*
         // Initialize OSC
         OSCReceiver receiver = gameObject.AddComponent<OSCReceiver>();
         receiver.LocalPort = oscPortNumber;
         receiver.Bind("/" + oscDeviceUUID + "/touch0", OnMoveOSC);
+        */
 
         //count = 0;
         //maxCount = GameObject.FindGameObjectsWithTag("Diamond").Length;
         //SetCountText();
     }
 
-    /*
+    
     private void OnMove(InputValue movementValue)
     {
         Vector2 movementVector = movementValue.Get<Vector2>();
@@ -55,8 +57,9 @@ public class WheelController : MonoBehaviour
         movementX = movementVector.x;
 
     }
-    */
+    
 
+    /*
     public void OnMoveOSC(OSCMessage message)
     {
         movementX = (float)message.Values[0].DoubleValue;
@@ -64,6 +67,7 @@ public class WheelController : MonoBehaviour
         Debug.Log("movementX = " + movementX.ToString("F6"));
         
     }
+    */
 
     private void FixedUpdate()
     {
