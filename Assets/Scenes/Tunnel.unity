@@ -130,9 +130,25 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 100244, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
+      propertyPath: m_Name
+      value: Whell BL
+      objectReference: {fileID: 0}
+    - target: {fileID: 109230, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
+      propertyPath: m_Name
+      value: Whell FL
+      objectReference: {fileID: 0}
+    - target: {fileID: 142770, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
+      propertyPath: m_Name
+      value: Whell BR
+      objectReference: {fileID: 0}
     - target: {fileID: 156642, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
       propertyPath: m_Name
       value: Scateboard
+      objectReference: {fileID: 0}
+    - target: {fileID: 194348, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
+      propertyPath: m_Name
+      value: Whell FR
       objectReference: {fileID: 0}
     - target: {fileID: 453344, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
       propertyPath: m_RootOrder
@@ -152,15 +168,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 453344, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: -4.04
       objectReference: {fileID: 0}
     - target: {fileID: 453344, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 18.5
+      value: 1.49
       objectReference: {fileID: 0}
     - target: {fileID: 453344, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -41.1
+      value: -16.29
       objectReference: {fileID: 0}
     - target: {fileID: 453344, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
       propertyPath: m_LocalRotation.w
@@ -194,6 +210,206 @@ PrefabInstance:
       propertyPath: m_ConstrainProportionsScale
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1062920610725951488, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_Name
+      value: Wheel BL
+      objectReference: {fileID: 0}
+    - target: {fileID: 1614898052909614527, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1684294717526516020, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_Name
+      value: Wheel BR
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734191835097287587, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734191835097287587, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734191835097287587, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 4500
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734191835097287587, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionSpring.spring
+      value: 35000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2734191835097287587, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625410806015004093, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3625410806015004093, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionSpring.spring
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4320984463814790465, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4320984463814790465, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionSpring.spring
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4463394920653694069, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4463394920653694069, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4463394920653694069, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 4500
+      objectReference: {fileID: 0}
+    - target: {fileID: 4463394920653694069, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionSpring.spring
+      value: 35000
+      objectReference: {fileID: 0}
+    - target: {fileID: 4463394920653694069, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 4807446440386054088, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_Name
+      value: Wheel FL
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407104386222535220, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407104386222535220, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407104386222535220, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6407104386222535220, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6579034673174761289, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 4.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6579034673174761289, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionSpring.spring
+      value: 35
+      objectReference: {fileID: 0}
+    - target: {fileID: 6586792358018082509, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_Name
+      value: Wheel FR
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836422255756951570, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836422255756951570, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836422255756951570, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836422255756951570, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6836422255756951570, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7382222516590015196, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7382222516590015196, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7382222516590015196, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 4500
+      objectReference: {fileID: 0}
+    - target: {fileID: 7382222516590015196, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionSpring.spring
+      value: 35000
+      objectReference: {fileID: 0}
+    - target: {fileID: 7382222516590015196, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.001
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176947079738655059, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_Center.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176947079738655059, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionDistance
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176947079738655059, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionSpring.damper
+      value: 4500
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176947079738655059, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SuspensionSpring.spring
+      value: 35000
+      objectReference: {fileID: 0}
+    - target: {fileID: 8176947079738655059, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+        type: 3}
+      propertyPath: m_SidewaysFriction.m_ExtremumSlip
+      value: 0.001
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 11905513070e2f34e8cd7350fb0d8ce7, type: 3}
 --- !u!1 &108910889 stripped
@@ -202,22 +418,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 108910888}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &108910890
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+--- !u!146 &108910890 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 2734191835097287587, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+    type: 3}
+  m_PrefabInstance: {fileID: 108910888}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 108910889}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 799689e73edc9944389c68c9131ace38, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  speed: 20
-  collectSound: {fileID: 0}
-  deathSound: {fileID: 0}
-  backgroundMusic: {fileID: 0}
 --- !u!114 &108910891
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -257,7 +463,7 @@ Rigidbody:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 108910889}
   serializedVersion: 2
-  m_Mass: 1
+  m_Mass: 100
   m_Drag: 0
   m_AngularDrag: 0.05
   m_UseGravity: 1
@@ -265,6 +471,24 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 1
+--- !u!146 &108910893 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 4463394920653694069, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+    type: 3}
+  m_PrefabInstance: {fileID: 108910888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!146 &108910894 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 7382222516590015196, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+    type: 3}
+  m_PrefabInstance: {fileID: 108910888}
+  m_PrefabAsset: {fileID: 0}
+--- !u!146 &108910895 stripped
+WheelCollider:
+  m_CorrespondingSourceObject: {fileID: 8176947079738655059, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+    type: 3}
+  m_PrefabInstance: {fileID: 108910888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!65 &108910896
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -278,6 +502,29 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.24307224, y: 0.078013636, z: 0.95912075}
   m_Center: {x: -0.00072714314, y: -0.008862692, z: 0.0046743006}
+--- !u!114 &108910900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 108910889}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4248fc8e07a6a9744919f41c5e6a91ba, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  frontRight: {fileID: 108910895}
+  frontLeft: {fileID: 108910894}
+  backRight: {fileID: 108910893}
+  backLeft: {fileID: 108910890}
+  frontRightTransform: {fileID: 670738610}
+  frontLeftTransform: {fileID: 411270194}
+  backRightTransform: {fileID: 1924576536}
+  backLeftTransform: {fileID: 1063991687}
+  accelaration: 20
+  breakingForce: 10
+  maxTurnAngle: 15
 --- !u!1 &319039689
 GameObject:
   m_ObjectHideFlags: 0
@@ -371,7 +618,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &319039692
 MonoBehaviour:
@@ -393,6 +640,12 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+--- !u!4 &411270194 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 423680, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+    type: 3}
+  m_PrefabInstance: {fileID: 108910888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &659866575
 GameObject:
   m_ObjectHideFlags: 0
@@ -470,14 +723,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 659866575}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 17.1, z: -46.1}
+  m_LocalRotation: {x: -0, y: -0.46350688, z: -0, w: 0.88609326}
+  m_LocalPosition: {x: 7.2, y: 3.62, z: -22.45}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: -55.227, z: 0}
 --- !u!114 &659866579
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -511,6 +764,12 @@ MonoBehaviour:
   m_RequiresDepthTexture: 0
   m_RequiresColorTexture: 0
   m_Version: 2
+--- !u!4 &670738610 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 486214, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+    type: 3}
+  m_PrefabInstance: {fileID: 108910888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &731808057
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,7 +793,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 731808057}
-  m_LocalRotation: {x: 0.08715578, y: 0, z: 0, w: 0.9961947}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0.5, z: 45.2}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -543,7 +802,13 @@ Transform:
   - {fileID: 1267848750}
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 10, y: 0, z: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1063991687 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 401696, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+    type: 3}
+  m_PrefabInstance: {fileID: 108910888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1261107664
 GameObject:
   m_ObjectHideFlags: 0
@@ -586,7 +851,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261107664}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -779,7 +1044,7 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874479686}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -834,6 +1099,12 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1874479686}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!4 &1924576536 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 469348, guid: 11905513070e2f34e8cd7350fb0d8ce7,
+    type: 3}
+  m_PrefabInstance: {fileID: 108910888}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2076618062
 GameObject:
   m_ObjectHideFlags: 0
