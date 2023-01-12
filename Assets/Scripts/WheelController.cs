@@ -130,7 +130,7 @@ public class WheelController : MonoBehaviour
         //rb.AddForce(0,0,kickForce,ForceMode.Impulse);
 
         // currently every collision will write a message to the console
-        accelaration = 0f;
+        //accelaration = 0f;
 
         // add delay
         rb.isKinematic = true;
