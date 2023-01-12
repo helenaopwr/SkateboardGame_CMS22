@@ -22,11 +22,12 @@ public class WheelController : MonoBehaviour
     public float accelaration = 20f;
     public float breakingForce = 10f;
     public float maxTurnAngle = 15f;
+    public float kickForce = 100f;
     
     private Rigidbody rb;
     
     private float movementX;
-    
+
     private float currentAcceleration = 0f;
     private float currentBreakForce = 0f;
     private float currentTurnAngle = 0f;
@@ -71,18 +72,8 @@ public class WheelController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        // Get forward/reverse acceleration from keyboard (W and S keys)
-        currentAcceleration = accelaration; //* Input.GetAxis("Vertical");
-
-        // If we are pressing space, give currentBreakingForce a value
-        if (Input.GetKey(KeyCode.Space))
-        {
-            currentBreakForce = breakingForce;
-        }
-        else
-        {
-            currentBreakForce = 0f;
-        }
+        
+        currentAcceleration = accelaration; 
 
         // Apply accelaration to skateboard
         frontRight.motorTorque = currentAcceleration;
@@ -127,11 +118,24 @@ public class WheelController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        // make a animation for crash
+        /*
+        if (col.gameObject.tag == "Ball") // Do not forget assign tag to the field
+        {
+         
+            rb.AddForce(transform.right * kickForce);
+        }
+        */
+
+        //rb.AddForce(0,0,kickForce,ForceMode.Impulse);
+
         // currently every collision will write a message to the console
-        Debug.Log("collision");
+        accelaration = 0f;
 
         // add delay
         rb.isKinematic = true;
+
+        //Invoke("BackToMenu", 5.0f);
 
     }
 }
