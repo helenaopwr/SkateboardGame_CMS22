@@ -37,12 +37,12 @@ public class WheelController : MonoBehaviour
         rb = GetComponent<Rigidbody>();
         //audioSource = GetComponent<AudioSource>();
 
-        /*
+        
         // Initialize OSC
         OSCReceiver receiver = gameObject.AddComponent<OSCReceiver>();
         receiver.LocalPort = oscPortNumber;
         receiver.Bind("/" + oscDeviceUUID + "/touch0", OnMoveOSC);
-        */
+        
 
         //count = 0;
         //maxCount = GameObject.FindGameObjectsWithTag("Diamond").Length;
@@ -60,7 +60,7 @@ public class WheelController : MonoBehaviour
     }
     
 
-    /*
+    
     public void OnMoveOSC(OSCMessage message)
     {
         movementX = (float)message.Values[0].DoubleValue;
@@ -68,7 +68,7 @@ public class WheelController : MonoBehaviour
         Debug.Log("movementX = " + movementX.ToString("F6"));
         
     }
-    */
+    
 
     private void FixedUpdate()
     {
@@ -118,20 +118,18 @@ public class WheelController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        // make a animation for crash
-        /*
-        if (col.gameObject.tag == "Ball") // Do not forget assign tag to the field
-        {
-         
-            rb.AddForce(transform.right * kickForce);
-        }
-        */
-        //rb.AddForce(0,0,kickForce,ForceMode.Impulse);
+        
+        // collect items, display and play sound ...
 
-        rb.isKinematic = true;
 
-        // Go back to menu
+    }
+
+    private void OnCollisionEnter(Collision collision)
+    {
+        accelaration = 0f;
+
+
+        // Go back to menu and so on...
         //Invoke("BackToMenu", 5.0f);
-
     }
 }
