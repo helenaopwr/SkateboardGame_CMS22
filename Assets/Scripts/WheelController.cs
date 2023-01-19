@@ -41,7 +41,7 @@ public class WheelController : MonoBehaviour
         // Initialize OSC
         OSCReceiver receiver = gameObject.AddComponent<OSCReceiver>();
         receiver.LocalPort = oscPortNumber;
-        receiver.Bind("/" + oscDeviceUUID + "/touch0", OnMoveOSC);
+        receiver.Bind("/ZIGSIM/" + oscDeviceUUID + "/quaternion", OnMoveOSC);
         
 
         //count = 0;
@@ -127,7 +127,6 @@ public class WheelController : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         accelaration = 0f;
-
 
         // Go back to menu and so on...
         //Invoke("BackToMenu", 5.0f);
