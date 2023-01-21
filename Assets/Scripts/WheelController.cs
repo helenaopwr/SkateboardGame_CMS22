@@ -16,6 +16,12 @@ public class WheelController : MonoBehaviour
     [SerializeField] Transform backRightTransform;
     [SerializeField] Transform backLeftTransform;
 
+    public AudioClip collectSound;
+    public AudioClip deathSound;
+
+    public AudioSource backgroundMusic;
+    private AudioSource audioSource;
+
     public int oscPortNumber = 10000;
     public string oscDeviceUUID;
     
@@ -23,7 +29,8 @@ public class WheelController : MonoBehaviour
     public float breakingForce = 10f;
     public float maxTurnAngle = 15f;
     public float kickForce = 100f;
-    
+    public int difficultey = 2;
+
     private Rigidbody rb;
     
     private float movementX;
@@ -32,10 +39,14 @@ public class WheelController : MonoBehaviour
     private float currentBreakForce = 0f;
     private float currentTurnAngle = 0f;
 
+    private int count = 0;
+    private int maxCount = 0;
+
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        //audioSource = GetComponent<AudioSource>();
+        audioSource = GetComponent<AudioSource>();
 
         
         // Initialize OSC
@@ -44,8 +55,8 @@ public class WheelController : MonoBehaviour
         receiver.Bind("/ZIGSIM/" + oscDeviceUUID + "/quaternion", OnMoveOSC);
         
 
-        //count = 0;
-        //maxCount = GameObject.FindGameObjectsWithTag("Diamond").Length;
+        count = 0;
+        maxCount = GameObject.FindGameObjectsWithTag("Collectables").Length;
         //SetCountText();
     }
 
@@ -63,9 +74,9 @@ public class WheelController : MonoBehaviour
     
     public void OnMoveOSC(OSCMessage message)
     {
-        movementX = (float)message.Values[0].DoubleValue;
+        movementX = (float)message.Values[0].FloatValue;
 
-        Debug.Log("movementX = " + movementX.ToString("F6"));
+        //Debug.Log("movementX = " + movementX.ToString("F6"));
     }
     
 
@@ -86,7 +97,7 @@ public class WheelController : MonoBehaviour
         backLeft.brakeTorque = currentBreakForce;
 
         // Take care of the steering
-        currentTurnAngle = maxTurnAngle * movementX;
+        currentTurnAngle = maxTurnAngle * movementX * difficultey;
         frontLeft.steerAngle = currentTurnAngle;
         frontRight.steerAngle = currentTurnAngle;
         backRight.steerAngle = currentTurnAngle * -1;
@@ -117,15 +128,29 @@ public class WheelController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
-        // collect items, display and play sound ...
+
+        if (other.gameObject.CompareTag("Collectables"))
+        {
+            audioSource.PlayOneShot(collectSound);
+
+            other.gameObject.SetActive(false);
+
+            count++;
+            Debug.Log("counter = " + count);
+            //SetCountText();
 
 
-    }
+        }
+}
 
     private void OnCollisionEnter(Collision collision)
     {
         accelaration = 0f;
+
+        backgroundMusic.Stop();
+        audioSource.PlayOneShot(deathSound);
+
+        //winLooseText.text = "G A M E  O V E R";
 
         // Go back to menu and so on...
         //Invoke("BackToMenu", 5.0f);
