@@ -41,7 +41,7 @@ public class WheelController : MonoBehaviour
         // Initialize OSC
         OSCReceiver receiver = gameObject.AddComponent<OSCReceiver>();
         receiver.LocalPort = oscPortNumber;
-        receiver.Bind("/ZIGSIM/" + oscDeviceUUID + "/quaternion", OnMoveOSC);
+        receiver.Bind(oscDeviceUUID + "/quaternion", OnMoveOSC);
         
 
         //count = 0;
