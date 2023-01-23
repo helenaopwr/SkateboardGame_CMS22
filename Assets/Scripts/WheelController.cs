@@ -50,8 +50,8 @@ public class WheelController : MonoBehaviour
         receiver.Bind("/ZIGSIM/" + oscDeviceUUID + "/quaternion", OnMoveOSC);
         
 
-        count = 0;
-        SetCountText();
+        //count = 0;
+        //SetCountText();
     }
 
     
@@ -120,9 +120,10 @@ public class WheelController : MonoBehaviour
     }
 
 
-    private void OnTriggerEnter(Collider other)
+   private void OnTriggerEnter(Collider other)
     {
-
+        ScoreManager.instance.AddPoint();
+        /*
         // collect items, display and play sound ...
 
         if (other.gameObject.CompareTag("dollar"))
@@ -144,14 +145,17 @@ public class WheelController : MonoBehaviour
             rb.isKinematic = true;
 
             Invoke("BackToMenu", 5.0f);
-        }
+        }*/
 
     }
 
-    private void SetCountText()
+    /*private void SetCountText()
     {
         Score.text = "Your Score: " + count.ToString() + " $ ";
-    }
+    }*/
+
+
+   
 
     private void OnCollisionEnter(Collision collision)
     {
