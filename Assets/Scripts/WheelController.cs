@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using extOSC;
+using TMPro;
+using UnityEngine.SceneManagement;
 
 public class WheelController : MonoBehaviour
 {
@@ -32,6 +34,10 @@ public class WheelController : MonoBehaviour
     private float currentBreakForce = 0f;
     private float currentTurnAngle = 0f;
 
+
+    private int count = 0;
+    
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -44,9 +50,8 @@ public class WheelController : MonoBehaviour
         receiver.Bind("/ZIGSIM/" + oscDeviceUUID + "/quaternion", OnMoveOSC);
         
 
-        //count = 0;
-        //maxCount = GameObject.FindGameObjectsWithTag("Diamond").Length;
-        //SetCountText();
+        count = 0;
+        SetCountText();
     }
 
     
@@ -117,10 +122,35 @@ public class WheelController : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        
+
         // collect items, display and play sound ...
 
+        if (other.gameObject.CompareTag("dollar"))
+        {
 
+            other.gameObject.SetActive(false);
+
+            count = count + 1;
+            //count += 1;
+            //count++;
+
+            SetCountText();
+
+        }
+        else if (other.gameObject.CompareTag("Assets"))
+        {
+
+
+            rb.isKinematic = true;
+
+            Invoke("BackToMenu", 5.0f);
+        }
+
+    }
+
+    private void SetCountText()
+    {
+        Score.text = "Your Score: " + count.ToString() + " $ ";
     }
 
     private void OnCollisionEnter(Collision collision)

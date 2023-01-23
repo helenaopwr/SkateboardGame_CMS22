@@ -5,28 +5,28 @@ using UnityEngine.SceneManagement;
 
 public class MainMenu : MonoBehaviour
 {
-   /* public void OnStart()
-    {
-        // Load my game scene here...
-        SceneManager.LoadScene(1);
-    }
+    /* public void OnStart()
+     {
+         // Load my game scene here...
+         SceneManager.LoadScene(1);
+     }
 
-    public void OnQuit()
-    {
-        // Quit my game here...
+     public void OnQuit()
+     {
+         // Quit my game here...
 
-#if UNITY_EDITOR
-        UnityEditor.EditorApplication.isPlaying = false;
-#else
-        Application.Quit();
-#endif
-    }*/
-
+ #if UNITY_EDITOR
+         UnityEditor.EditorApplication.isPlaying = false;
+ #else
+         Application.Quit();
+ #endif
+     }*/
 
     public void GoToScene(string sceneName)
      {
          SceneManager.LoadScene(sceneName);
      }
+
     public void QuitApp()
      {
          Application.Quit();
